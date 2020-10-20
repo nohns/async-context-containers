@@ -1,0 +1,21 @@
+{
+  "name": "node-typescript-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for a TypeScript project",
+  "main": "dist/main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "start": "ts-node ./src/main.ts",
+    "start:dev": "nodemon",
+    "start:prod": "node ./dist/main.js"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
