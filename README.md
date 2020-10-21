@@ -61,6 +61,17 @@ withContext(...contextProviders: ContextProvider[]).in(async() => {
 They are pretty much just a type of middleware. You will learn more about this in the following *Getting Started* guide.
 
 ## Getting started
+
+**Installation**:
+
+```shell script
+# With NPM
+npm install async-context-containers --save
+
+# Or with Yarn
+yarn add async-context-containers
+```
+
 *The following usage examples uses Typescript as this library provides type-hinting...*
 
 Create a file for your context logic. Mine is called **context.ts**
