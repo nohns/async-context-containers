@@ -1,6 +1,6 @@
 {
     "name": "async-context-containers",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A library for sharing context deep down in asynchronous call stacks based on Node's async-hooks. Works with callbacks and promises",
     "main": "dist/index.js",
     "author": "Asger Nohns",
