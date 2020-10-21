@@ -1,17 +1,17 @@
 # Async context containers
 
-### What is the async-context-containers library?
+## What is the async-context-containers library?
 
 Async context containers is a strongly-typed Typescript library that 
 helps deeply nested async functions with getting context set higher up the call stack. 
 It relies on cls-hooked, which is using the experimental node feature async-hooks.
 
-##### Disclaimer
+##### Disclaimer!
 As the async-hooks feature in Node.js is not yet stable, you should expect that your 
 data could be undefined when you access it. Not that this happens that often 
 (haven't tried it yet myself), but it is good practice to check for it anyways.
 
-### Concept
+## Concept
 
 **Context container:** 
 A piece of context that can be shared at some point in your app, 
@@ -60,7 +60,7 @@ withContext(...contextProviders: ContextProvider[]).in(async() => {
 ```
 They are pretty much just a type of middleware. You will learn more about this in the following *Getting Started* guide.
 
-### Getting started
+## Getting started
 *The following usage examples uses Typescript as this library provides type-hinting...*
 
 Create a file for your context logic. Mine is called **context.ts**
