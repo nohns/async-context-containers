@@ -1,21 +1,42 @@
 {
-  "name": "node-typescript-starter",
-  "version": "1.0.0",
-  "description": "Boilerplate for a TypeScript project",
-  "main": "dist/main.js",
-  "author": "",
-  "license": "MIT",
-  "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "start": "ts-node ./src/main.ts",
-    "start:dev": "nodemon",
-    "start:prod": "node ./dist/main.js"
-  },
-  "devDependencies": {
-    "@types/node": "^13.7.0",
-    "nodemon": "^2.0.2",
-    "rimraf": "^3.0.2",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
-  }
+    "name": "async-context-containers",
+    "version": "1.0.0",
+    "description": "A library for sharing context deep down in asynchronous call stacks based on Node's async-hooks. Works with callbacks and promises",
+    "main": "dist/index.js",
+    "author": "Asger Nohns",
+    "license": "MIT",
+    "scripts": {
+        "build": "rimraf ./dist && tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^13.7.0",
+        "nodemon": "^2.0.2",
+        "rimraf": "^3.0.2",
+        "ts-node": "^8.6.2",
+        "typescript": "^3.7.5"
+    },
+    "dependencies": {
+        "@types/cls-hooked": "^4.3.1",
+        "cls-hooked": "^4.2.2"
+    },
+    "files": [
+        "dist/**/*",
+        "README.md"
+    ],
+    "keywords": [
+        "promise",
+        "async",
+        "await",
+        "request-context",
+        "express-request-context",
+        "context",
+        "provider",
+        "async-context",
+        "cls-hooked",
+        "middleware"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nohns/async-context-containers"
+    }
 }
