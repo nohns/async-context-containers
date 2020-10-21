@@ -5,7 +5,7 @@ import { GenerateProviderOptions } from './context-provider.options';
 /**
  * Contains the setters and getters for a chuck of context saved in a cls namespace
  */
-export class ContextContainer<TContextMap extends DefaultContextMap, KContext extends keyof TContextMap> {
+export class ContextContainer<TContextMap, KContext extends keyof TContextMap> {
     constructor(private contextName: KContext) {}
 
     public get namespace() {

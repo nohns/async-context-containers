@@ -4,16 +4,8 @@ import { ContextContainer } from './context.container';
 import { ContextProvider } from './context.handler';
 import { DefaultContextMap } from './default-context-map.interface';
 
-export class ContextFactory<TContextMap extends DefaultContextMap> {
+export class ContextFactory<TContextMap> {
     private contextsMap = new Map<string, ContextContainer<TContextMap, any>>();
-
-    public createDefault() {
-        return this.create('default');
-    }
-
-    public get default() {
-        return this.load('default') as ContextContainer<TContextMap, 'default'>;
-    }
 
     public create<K extends keyof TContextMap>(contextName: K) {
         this.contextsMap.set(String(contextName), new ContextContainer<TContextMap, K>(contextName));
